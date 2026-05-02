@@ -1,0 +1,5 @@
+[TYPECHECK]
+# OpenCV exposes many members from a compiled extension at runtime.
+# Allowing cv2 prevents false 'no-member' diagnostics.
+extension-pkg-allow-list=cv2
+generated-members=cv2.*
